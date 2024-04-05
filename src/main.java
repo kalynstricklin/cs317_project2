@@ -55,10 +55,16 @@ public class main {
 
 
     }
-    public static void outputTable(int[][] table, int n, FileWriter file) throws IOException {
-        int [][]rows = new int[1][n+1];
-        int []columns = new int[n];
 
+    /**
+     * Print out table
+     *
+     * @param table
+     * @param n
+     * @param file
+     * @throws IOException
+     */
+    public static void outputTable(int[][] table, int n, FileWriter file) throws IOException {
         for(int i=1; i <= n; i++){
             file.write(String.format("%3d", i));
             for(int j=0; j <= n; j++){
@@ -88,6 +94,11 @@ public class main {
 
         }
     }
+
+    /**
+     * @param p
+     * @return
+     */
     public static SearchResult optimalBinarySearch(List<Integer> p){
         int n = p.size();
 
