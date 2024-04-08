@@ -1,16 +1,19 @@
 package src;
 
+/**
+ *
+ */
  class SearchResult{
-    int[][] S;
+    int[][] C;
     int[][] R;
 
-    SearchResult(int[][]S, int[][]R){
-        this.S =S;
+    SearchResult(int[][]C, int[][]R){
+        this.C =C;
         this.R=R;
     }
 
-     public int[][] getS() {
-         return S;
+     public int[][] getC() {
+         return C;
      }
 
      public int[][] getR() {
